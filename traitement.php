@@ -5,13 +5,20 @@
   <title>formulaire 1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
  <?php
+echo "<table>";
 
-echo "Hello World !!";
+for($x = 0; $x <=10 ; $x++) {
 
-$nom=$_REQUEST["nom"];
-echo $nom. " est ";
+  $res=$x*8;
+  echo "<tr><td> 8 x ".$x."=</td><td>".$res."</td></tr>";
+}
+echo "</table>";
 ?>
 <body>
+  
+</body>
+  
+  </html>
